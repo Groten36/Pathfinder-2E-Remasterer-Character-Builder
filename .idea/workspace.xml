@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="978d20db-d8a8-49fd-acdb-22dc9fc93468" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Ability.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Charisma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Constitution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Dexterity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Intelligence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Strength.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Wisdom.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/Attribute.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/Fortitute.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/Reflex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/SavingThrow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/Will.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exceptions/CharacterCreationError.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proficiency/Proficiency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +55,7 @@
     "Python.observer.executor": "Run",
     "Python.scratch.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/vader/Downloads",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -72,6 +83,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\vader\Downloads" />
       <recent name="C:\Users\vader\PycharmProjects\Pathfinder2ERemasterCharacterBuilder" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vader\PycharmProjects\Pathfinder2ERemasterCharacterBuilder\Attributtes\Main" />
     </key>
   </component>
   <component name="SharedIndexes">
