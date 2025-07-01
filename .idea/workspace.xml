@@ -5,21 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="978d20db-d8a8-49fd-acdb-22dc9fc93468" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Ability.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Charisma.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Constitution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Dexterity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Intelligence.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Strength.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attributtes/Abilities/Wisdom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attributtes/Attribute.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/Fortitute.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/Reflex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/SavingThrow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/Will.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exceptions/CharacterCreationError.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proficiency/Proficiency.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ancentries/Ancestry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ancentries/Dwarf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ancentries/Elf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ancentries/Human.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AttributeFactory/AbstractAttributeFactory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AttributeFactory/HeroicAttributeFactory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AttributeFactory/StandardAttributeFactory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Character.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterClasses/CharacterClass.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterClasses/Cleric.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterClasses/Fighter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterClasses/Rogue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CharacterClasses/Wizard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Equipment/Equipment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Skills/Skill.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attributtes/Abilities/Ability.py" beforeDir="false" afterPath="$PROJECT_DIR$/Attributtes/Abilities/Ability.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attributtes/Attribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Attributtes/Attribute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attributtes/SavingThrows/Fortitute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/Fortitude.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attributtes/SavingThrows/Reflex.py" beforeDir="false" afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/Reflex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attributtes/SavingThrows/SavingThrow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/SavingThrow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Attributtes/SavingThrows/Will.py" beforeDir="false" afterPath="$PROJECT_DIR$/Attributtes/SavingThrows/Will.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proficiency/Proficiency.py" beforeDir="false" afterPath="$PROJECT_DIR$/Proficiency/ProficiencyLevel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,15 +56,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Character.executor": "Run",
     "Python.Dekorator.executor": "Run",
+    "Python.Dwarf.executor": "Run",
     "Python.Fasada.executor": "Run",
+    "Python.Fortitute.executor": "Run",
     "Python.Mediator.executor": "Run",
     "Python.MetodaWytworcza.executor": "Run",
     "Python.Obserwator.executor": "Run",
     "Python.Singleton.executor": "Run",
+    "Python.Skill.executor": "Run",
+    "Python.main.executor": "Run",
     "Python.observer.executor": "Run",
     "Python.scratch.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/vader/Downloads",
     "node.js.detected.package.eslint": "true",
@@ -109,6 +125,7 @@
       <workItem from="1750429772520" duration="505000" />
       <workItem from="1750430287423" duration="7632000" />
       <workItem from="1751190535055" duration="2068000" />
+      <workItem from="1751313604193" duration="16343000" />
     </task>
     <servers />
   </component>
@@ -119,10 +136,15 @@
     <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$MetodaWytworcza.coverage" NAME="MetodaWytworcza Coverage Results" MODIFIED="1750675244706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/kreacyjne/kreacyjne/factories" />
     <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1750431224886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$Singleton.coverage" NAME="Singleton Coverage Results" MODIFIED="1750675650863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
+    <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$Character.coverage" NAME="Character Coverage Results" MODIFIED="1751402768727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$Skill.coverage" NAME="Skill Coverage Results" MODIFIED="1751402822671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Skills" />
     <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$observer.coverage" NAME="observer Coverage Results" MODIFIED="1750431176865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/behawioralne/behawioralne/observer" />
-    <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$Mediator.coverage" NAME="Mediator Coverage Results" MODIFIED="1750673946718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/behawioralne/behawioralne/iterator" />
     <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$Fasada.coverage" NAME="Fasada Coverage Results" MODIFIED="1750676609509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
+    <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$Fortitute.coverage" NAME="Fortitute Coverage Results" MODIFIED="1751402000400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Attributtes/SavingThrows" />
+    <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$main.coverage" NAME="main Coverage Results" MODIFIED="1751404950005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$Obserwator.coverage" NAME="Obserwator Coverage Results" MODIFIED="1750674030093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$Dekorator.coverage" NAME="Dekorator Coverage Results" MODIFIED="1750676364424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/strukturalne (1)/strukturalne/decorator" />
+    <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$Dwarf.coverage" NAME="Dwarf Coverage Results" MODIFIED="1751403560479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Ancentries" />
+    <SUITE FILE_PATH="coverage/Pathfinder2ERemasterCharacterBuilder$Mediator.coverage" NAME="Mediator Coverage Results" MODIFIED="1750673946718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads/behawioralne/behawioralne/iterator" />
   </component>
 </project>

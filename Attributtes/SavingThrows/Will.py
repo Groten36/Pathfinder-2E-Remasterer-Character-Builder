@@ -1,5 +1,5 @@
 from Attributtes.SavingThrows.SavingThrow import SavingThrow
-from Proficiency.Proficiency import ProficiencyLevel
+from Proficiency.ProficiencyLevel import ProficiencyLevel
 
 
 class Will(SavingThrow):

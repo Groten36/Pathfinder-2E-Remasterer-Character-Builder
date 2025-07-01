@@ -1,5 +1,5 @@
 from Attributtes.Attribute import Attribute
-from Proficiency.Proficiency import ProficiencyLevel
+from Proficiency.ProficiencyLevel import ProficiencyLevel
 from Exceptions.CharacterCreationError import CharacterCreationError
 
 class SavingThrow(Attribute):
@@ -14,14 +14,12 @@ class SavingThrow(Attribute):
 
     _ability_score_name: str = None
 
-    def __init__(self, name, proficiency_level: ProficiencyLevel, character_level: int,value=0):
+    def __init__(self, name, proficiency_level: ProficiencyLevel, character_level=1,value=0):
         super().__init__(name, value)
         if not isinstance(proficiency_level, ProficiencyLevel):
             raise CharacterCreationError("Proficiency Level must be valid.")
         if not isinstance(character_level, int) or character_level < 0:
             raise CharacterCreationError("Character Level must be valid.")
-        if self._ability_score_name is None:
-            raise NotImplementedError("Subclasses must have valid 'ability_score_name'.")
 
         self.proficiency_level = proficiency_level
         self.character_level = character_level

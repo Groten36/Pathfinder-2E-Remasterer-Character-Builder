@@ -21,5 +21,8 @@ class Attribute:
             raise CharacterCreationError("Value must be a integer.")
         self.value = new_value
 
+    def modifier(self) -> int:
+        pass
+
     def __str__(self):
-        return f"{self.name}: {self.value} (Modificator: {self.modifikator()})"
+        return f"{self.name}: {self.value} (Modificator: {self.modifier()})"
